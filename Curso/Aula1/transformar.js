@@ -1,15 +1,23 @@
 
-let str = 'abcdef';
+
 
 function transformar(letras) {
     var result = [];
-    result.push(letras.substr(2,2))
+    var letrasTamanho = letras.length;
+ if(letrasTamanho % 2 != 0 )  {
+    letras = letras.concat('_')
+    // console.log(letras)
+
+ } 
+for(cont = 0; cont < letrasTamanho; cont++){
+    if(cont % 2 == 0 ){
+        result.push(letras.substr(cont,2))
+    }
+    }
+
     console.log(result)
+//console.log(letrasTamanho)
     
 }
 
-transformar('abcdef')
-
-
-// console.log(str.substr(-20, 2).());
-// console.log(str.substr(2, 2).split());
+transformar('abcdefg')
