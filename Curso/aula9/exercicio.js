@@ -9,20 +9,12 @@ const varATemp = varA;
 
 console.log(varA , varB , varC)*/
 
-
+//solução mais rapida
 var a = "A";
 var b = "B";
 var c = "C";
 console.log('Entrada: ', a, b, c);
 
-a += "|" + b;
+[a , b, c] = [b, c, a]
 
-b = a.split('|')[0];
-a = a.split('|')[1];
-
-b+= "|" + c;
-
-c = b.split('|')[0];
-b = b.split('|')[1];
-
-console.log('Saida: ', a, b, c);
+console.log('saida: ', a, b, c);
