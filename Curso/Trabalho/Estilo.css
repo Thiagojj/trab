@@ -1,0 +1,49 @@
+/* Estilizando o corpo da página */
+body {
+    background-color: #f0f0f0; /* Cor de fundo clara */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando o título principal (h1) */
+h1 {
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centralizando o título */
+    padding: 20px;
+}
+
+/* Estilizando os parágrafos */
+p {
+    color: #555; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.6; /* Espaçamento entre linhas */
+    margin: 20px;
+}
+
+/* Estilizando links */
+a {
+    color: #0066cc; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Ao passar o mouse sobre o link */
+a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+/* Estilo da div com classe .caixa */
+.caixa {
+    /*background-color: #e0e0e0; /* Cor de fundo da div */
+    padding: 168px; /* Espaçamento interno */
+    margin: 26px; /* Espaçamento externo */
+   /* border: 1px solid #ccc; /* Borda ao redor da div */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+.mini{
+    color: #301bec; /* Cor do texto */
+    text-align: center; /* Centralizando o título */
+    padding: 20px;
+    text-decoration: underline;
+}
