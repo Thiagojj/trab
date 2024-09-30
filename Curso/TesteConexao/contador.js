@@ -1,6 +1,6 @@
 // Função para ordenar números em ordem crescente
 function ordenarNumeros(numeros) {
-    return numeros.sort((a, b) => a - b);
+    return numeros.sort((a, b) => b - a);
   }
   
   // Exemplo de uso
