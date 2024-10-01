@@ -4,13 +4,30 @@ body {
     /* Cor de fundo clara */
     font-family: Arial, sans-serif;
     /* Fonte padrão */
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    min-width: 320px; /* Largura mínima da página */
+    max-width: 1216; /* Largura máxima da página */
+    min-height: 100vh; /* Altura mínima da página ocupando toda a altura da viewport */
+    
+}
+/* Estilizando conteiner */
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribui o logo à esquerda e o menu à direita */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #f0f0f0; /* Cor de fundo do header */
+    padding: 10px;
+    position: fixed; /* Fixa o header no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz o header ocupar toda a largura da página */
+    z-index: 100; /* Garante que o header fique sobre outros elementos */
 }
 
 /* Estilizando imagem */
 
-.imagem {
+.logo {
     width: 150px;
     height: 100px;
     background-image: url(images/logo-01.png);
@@ -19,28 +36,36 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    position: absolute;
-    top: 5px;
     /* Alinha o logo ao topo */
 
 }
 
-/* Estilizando conteiner */
-.container {
-    display: flex;
-    justify-content: space-between;
-    /* Cria espaço entre os itens */
-    background-color: #f0f0f0;
-    padding: 10px;
-}
+ /* Estilo do menu */
+        .menu {
+            display: flex;
+            list-style: none; /* Remove as bolinhas da lista */
+            gap: 48px; /* Espaçamento entre os itens do menu */
+            margin: 0;
+           padding: 0;
+           
+        }
 
-/* Estilizando menu */
-.menu {
-    display: flex;
-    list-style: none; /* Remove as bolinhas da lista */
-    margin: 0;
-    padding: 0;
-}
+        .menu a {
+            text-decoration: none; /* Remove o sublinhado dos links */
+            color: #333; /* Cor dos links */
+            font-size: 16px;
+        }
+
+        /* Adicionando um hover para os links */
+        .menu a:hover {
+            color: #4CAF50; /* Cor ao passar o mouse */
+        }
+        
+          /* Garantir que o conteúdo abaixo não fique escondido pelo header */
+        .texto {
+            margin-top: 120px; /* Margem igual à altura do header */
+            padding: 20px;
+        }
 
 
 /* Estilizando o título principal (h1) */
